@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Banco - Mateo Nariño</title>
+</head>
+<body>    
+    <div class="jumbotron text-center">
+        <h1>Fila de un banco</h1>
+        <p>Andres Mateo Nariño Rodriguez</p> 
+    </div>    
+    <div class="content">
+        <div class="botones text-center">
+            <button type="button" id="start" class="btn btn-primary" onclick="iniciar()">Iniciar cola</button>
+            <button type="button" id="atender" class="btn btn-primary" onclick="atender()">Atender</button>
+            <button type="button" id="añadir" class="btn btn-primary" onclick="añadir()">Añadir</button>
+        </div>
+    
+        <div class="colaGh" id="bank-queue">
+            <div id="cajero" class="cajero">
+                <!--cajero-->            
+            </div>
+            <div id="queue" class="text-align-center queue">
+                <!--Fila-->
+            </div>        
+        </div>
+    </div>
+    <!--Javascript-->    
+    <script src="cola.js"></script>
+    <script src="helper.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
